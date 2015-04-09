@@ -5,20 +5,17 @@
 (scroll-bar-mode 0)
 
 ; neotree
-(add-to-list 'load-path "/Users/joshua/github/emacs-plugins/neotree")
+(add-to-list 'load-path "~/.emacs.d/plugins/emacs-neotree")
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 
 ; auto-complete
-; (add-to-list 'load-path "/Users/joshua/github/emacs-plugins/pos-tip") native tooltip
-(add-to-list 'load-path "/Users/joshua/github/emacs-plugins/popup-el")
-(add-to-list 'load-path "/Users/joshua/github/emacs-plugins/auto-complete")
+(add-to-list 'load-path "~/.emacs.d/plugins/popup-el")
+(add-to-list 'load-path "~/.emacs.d/plugins/auto-complete")
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories
-             "/Users/joshua/github/emacs-plugins/auto-complete/dict")
+             "~/.emacs.d/plugins/auto-complete/dict")
 (ac-config-default)
-; (require 'pos-tip)
-; (setq ac-quick-help-prefer-pos-tip t)   ;default is t
 (setq ac-use-quick-help t)
 (setq ac-quick-help-delay 1.0)
 
