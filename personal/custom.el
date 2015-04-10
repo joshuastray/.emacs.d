@@ -2,10 +2,14 @@
 (global-linum-mode 1) ; always show line numbers
 (setq linum-format "%d ") ;set format
 
+(scroll-bar-mode 0)
+
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier 'super)
 
-(scroll-bar-mode 0)
+; use meta+space for set-mark
+(global-unset-key (kbd "C-SPC"))
+(global-set-key (kbd "M-SPC") 'set-mark-command)
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'monokai t)
