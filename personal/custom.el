@@ -20,14 +20,14 @@
 (global-set-key [f8] 'neotree-toggle)
 
 ; auto-complete
-(add-to-list 'load-path "~/.emacs.d/plugins/popup-el")
-(add-to-list 'load-path "~/.emacs.d/plugins/auto-complete")
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories
-             "~/.emacs.d/plugins/auto-complete/dict")
-(ac-config-default)
-(setq ac-use-quick-help t)
-(setq ac-quick-help-delay 1.0)
+;(add-to-list 'load-path "~/.emacs.d/plugins/popup-el")
+;(add-to-list 'load-path "~/.emacs.d/plugins/auto-complete")
+;(require 'auto-complete-config)
+;(add-to-list 'ac-dictionary-directories
+;             "~/.emacs.d/plugins/auto-complete/dict")
+;(ac-config-default)
+;(setq ac-use-quick-help t)
+;(setq ac-quick-help-delay 1.0)
 
 ; (setq default-frame-alist
 ; '((height . 45) (width . 125) (menu-bar-lines . 20) (tool-bar-lines . 0)))
