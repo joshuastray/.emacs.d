@@ -38,5 +38,5 @@
 ;;(require 'sublimity-scroll)
 (require 'sublimity-map)
 ;; (require 'sublimity-attractive)
-(sublimity-mode 1)
+;(sublimity-mode 1)
 (sublimity-map-set-delay nil)
