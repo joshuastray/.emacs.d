@@ -31,3 +31,11 @@
 
 ; (setq default-frame-alist
 ; '((height . 45) (width . 125) (menu-bar-lines . 20) (tool-bar-lines . 0)))
+
+; minimap
+(add-to-list 'load-path "~/.emacs.d/plugins/sublimity")
+(require 'sublimity)
+;;(require 'sublimity-scroll)
+(require 'sublimity-map)
+;; (require 'sublimity-attractive)
+(sublimity-mode 1)

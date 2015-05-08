@@ -7,3 +7,6 @@
 [submodule "plugins/auto-complete"]
 	path = plugins/auto-complete
 	url = https://github.com/auto-complete/auto-complete.git
+[submodule "plugins/sublimity"]
+	path = plugins/sublimity
+	url = https://github.com/zk-phi/sublimity.git
