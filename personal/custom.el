@@ -40,3 +40,6 @@
 ;; (require 'sublimity-attractive)
 ;(sublimity-mode 1)
 (sublimity-map-set-delay nil)
+
+;; set width to 8000
+(setq whitespace-line-column 8000) ;; limit line length
