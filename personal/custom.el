@@ -4,6 +4,9 @@
 
 (set-frame-font "consolas 11")
 
+(setq-default indent-tabs-mode  nil)
+(setq-default tab-width 4)
+
 (scroll-bar-mode 0)
 
 (setq mac-command-modifier 'meta)
