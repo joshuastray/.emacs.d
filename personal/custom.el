@@ -2,6 +2,8 @@
 (global-linum-mode 1) ; always show line numbers
 (setq linum-format "%d ") ;set format
 
+(set-frame-font "consolas 11")
+
 (scroll-bar-mode 0)
 
 (setq mac-command-modifier 'meta)
@@ -12,7 +14,13 @@
 (global-set-key (kbd "M-SPC") 'set-mark-command)
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+;(add-to-list 'load-path "~/.emacs.d/themes")
+;(require 'color-theme-solarized)
+(customize-set-variable 'frame-background-mode 'light)
+(customize-set-variable 'solarized-visibility 'low)
+(customize-set-variable 'solarized-termcolors '256)
 (load-theme 'solarized t)
+
 
 ; neotree
 (add-to-list 'load-path "~/.emacs.d/plugins/emacs-neotree")
