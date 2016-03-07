@@ -4,7 +4,7 @@
 
 (set-frame-font "consolas 11")
 
-(setq-default indent-tabs-mode  nil)
+(setq-default indent-tabs-mode  1)
 (setq-default tab-width 4)
 
 (scroll-bar-mode 0)
@@ -55,6 +55,13 @@
 ;; set width to 8000
 (setq whitespace-line-column 8000) ;; limit line length
 
+;;;; This snippet enables lua-mode
+;; This line is not necessary, if lua-mode.el is already on your load-path
+(add-to-list 'load-path "~/.emacs.d/plugins/immerrr-lua-mode-3ec8f27")
+(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
+(add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
+(add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
+	
 ; glsl-mode
 (add-to-list 'load-path "~/.emacs.d/plugins/glsl-mode")
 (autoload 'glsl-mode "glsl-mode" nil t)
