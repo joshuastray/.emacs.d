@@ -71,6 +71,12 @@
 (add-to-list 'auto-mode-alist '("\\.geom\\'" . glsl-mode))
 (add-to-list 'auto-mode-alist '("\\.vsh\\'" . glsl-mode))
 (add-to-list 'auto-mode-alist '("\\.fsh\\'" . glsl-mode))
+
+; hlsl-mode
+(add-to-list 'load-path "~/.emacs.d/plugins/hlsl-mode")
+(autoload 'hlsl-mode "hlsl-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.hlsl\\'" . hlsl-mode))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
